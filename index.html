@@ -9,114 +9,442 @@
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
     <title>Benjcor</title>
+    <link rel="icon" type="image/x-icon" href="./img/svg/logo-dark.svg">
     <!-- Link to CSS -->
     <link href="css/styles.css" rel='stylesheet'>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 
 <body>
     <!-- navbar -->
     <header>
-        <!-- logo -->
-        <a href="#" class="logo"><i class="bx bxs-shopping-bag"></i>Bag</a>
-        <!-- Menu Icon -->
-        <i class='bx bx-menu' id="menu-icon"></i>
-        <!-- Nav List -->
-        <ul class="navbar">
-            <li><a href="#home">Inicio</a></li>
-            <li><a href="#about">Nosotros</a></li>
-            <li><a href="#products">Productos</a></li>
-            <li><a href="#customers">Customers</a></li>
-        </ul>
-        <!-- Right Icons -->
-        <div class="header-icon">
-            <i class='bx bx-search-alt-2' id="search-icon"></i>
-            <i class='bx bx-cart'><span>0</span></i>
-        </div>
-        <!-- Search -->
-        <div class="search-box">
-            <input type="search" name="" id="" placeholder="Search here...">
-        </div>
-
+        <img class="logo-desing" src="./img/svg/logo-dark.svg" id="img-logo" alt="">
+        <div id="menu-bar" class="fas fa-bars"></div>
+        <nav class="navbar">
+            <a href="#home">Inicio</a>
+            <a href="#about">Nosotros</a>
+            <a href="#services">Servicios</a>
+            <a href="#products">Productos</a>
+            <a href="#contact">Contácto</a>
+            <!-- <a href="#review">Reseñas</a> -->
+            <!-- <a href="#order">order</a> -->
+        </nav>
     </header>
     <!-- Home -->
     <section class="home" id="home">
         <div class="home-text">
-            <h3>Fashion Bag</h3>
-            <h1>Look Stylish <br>Be Stylish</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Voluptate assumenda dolore totam odio eaque provident suscipit ratione rem, repudiandae facere illum
-                adipisci animi rerum, recusandae ut nulla sequi beatae numquam!</p>
-            <a href="" class="btn">Buy Now</a>
+            <img style="width: 90%" src="./img/svg/text-head.svg" alt="">
         </div>
         <!-- Home Image -->
-        <div class="home-img">
-            <img src="img/home.png" alt="">
+         <div class="home-img">
+            <img src="img/svg/logo-semi-white.svg" alt="">
         </div>
     </section>
     <!-- About -->
-    <section class="about" id="about">
-        <div class="about-img">
-            <img src="img/about.png" alt="">
-        </div>
-        <div class="about-text">
-            <h2>Nosotros</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium cumque eius beatae quia assumenda
-                et, molestiae quisquam incidunt eligendi modi accusamus fuga voluptatum facere, eos sequi eaque nobis
-                distinctio magnam.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, reiciendis dolore. Quasi aspernatur
-                suscipit blanditiis impedit dolores consectetur voluptatibus officiis corrupti officia fugit sunt odio
-                sapiente, nihil ipsa quibusdam vero!</p>
-            <a href="#" class="btn">Learns more</a>
-        </div>
+    <section class="fondo">
+        <section class="about" id="about">
+            <div class="about-img">
+                <img src="img/about.png" alt="">
+            </div>
+            <div class="about-text">
+                <h3 class="title">SOBRE</h3>
+                <h3 class="own-script">nosotros</h3>
+                <p><b>Benjcor</b> es un equipo trabajador que servimos con pasión y dedicación,
+                    brindando a nuestros clientes los mejores bolsos, morrales y maletas. Sientete a gusto
+                    en escoger de la gran variedad.</p>
+                <a href="#products" class="btn">Ver más</a>
+            </div>
+        </section>
+        <!-- service sectioin starts  -->
+        <section class="service no-section" id="services">
+            <!-- <h3 class="own-script-service">Nosotros</h3> -->
+            <div class="service-box">
+                <div class="box">
+                    <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+                    <h3 class="title-services">EXCELENTE</h3>
+                    <h3 class="sub-services">Calidad</h3>
+                    <p>Nuestro compromiso, amor y durabilidad se ve reflejado en cada productos que entregamos a nuestros
+                        clientes.
+                    </p>
+                </div>
+                <div class="box">
+                    <i class="fas fa-credit-card"></i>
+                    <h3 class="title-services">PAGOS</h3>
+                    <h3 class="sub-services">y transferencias</h3>
+                    <p>Aceptamos pagos por tarjeta de débito o crédito o aplicaciones financieras (Nequi o Daviplata).</p>
+                </div>
+                <div class="box">
+                    <i class='bx bxs-check-shield'></i>
+                    <h3 class="title-services">SEGURIDAD</h3>
+                    <h3 class="sub-services">y durabilidad</h3>
+                    <p>Cada producto fue probado para su uso y su desempeño optimo.</p>
+                </div>
+            </div>
+        </section>
+        <!-- service sectioin ends -->
     </section>
+
     <!-- Products -->
     <section class="products" id="products">
         <div class="heading">
-            <h2>Nuestros Productos</h2>
+            <h3 class="title">NUESTROS</h3>
+            <h3 class="own-script">productos</h3>
         </div>
+        <ul class="controls">
+            <li class="btn button-active" data-filter="all">Todo</li>
+            <li class="btn" data-filter="bolsos">Bolsos</li>
+            <li class="btn" data-filter="carteras">Carteras</li>
+            <li class="btn" data-filter="equipaje">Maletas de viaje</li>
+            <li class="btn" data-filter="bag_kids">Maletas niños</li>
+            <li class="btn" data-filter="morrales">Morrales</li>
+         </ul>
         <div class="products-container">
-            <div class="box">
-                <img src="img/p1.png" alt="">
-                <h2>Loius Vouton 2-way</h2>
-                <span>$24.000</span>
-                <i class='bx bx-cart-add'></i>
+            <div class="box bolsos">
+                <img src="./img/productod/bolsos/1.png" alt="">
+                <h2>Bolso Tommy Hilfiger</h2>
+                <i class='n'></i>
             </div>
-            <div class="box">
-                <img src="img/p2.png" alt="">
-                <h2>Loius Vouton 2-way</h2>
-                <span>$24.000</span>
-                <i class='bx bx-cart-add'></i>
+            <div class="box bolsos">
+                <img src="./img/productod/bolsos/2.png" alt="">
+                <h2>Bolso BOSI cafe</h2>
+                <i class='n'></i>
             </div>
-            <div class="box">
-                <img src="img/p3.png" alt="">
-                <h2>Loius Vouton 2-way</h2>
-                <span>$24.000</span>
-                <i class='bx bx-cart-add'></i>
+            <div class="box bolsos">
+                <img src="./img/productod/bolsos/3.png" alt="">
+                <h2>Bolso BOSI negro</h2>
+                <i class='n'></i>
             </div>
-            <div class="box">
-                <img src="img/p4.png" alt="">
-                <h2>Loius Vouton 2-way</h2>
-                <span>$24.000</span>
-                <i class='bx bx-cart-add'></i>
+            <!-- <div class="box bolsos">
+                <img src="./img/productod/bolsos/4.png" alt="">
+                <h2>Bolso</h2>
+                <i class='n'></i>
+            </div> -->
+            <div class="box bolsos">
+                <img src="./img/productod/bolsos/5.png" alt="">
+                <h2>Bolso decorativo de gato</h2>
+                <i class='n'></i>
             </div>
-            <div class="box">
-                <img src="img/p5.png" alt="">
-                <h2>Loius Vouton 2-way</h2>
-                <span>$24.000</span>
-                <i class='bx bx-cart-add'></i>
+            <div class="box bolsos">
+                <img src="./img/productod/bolsos/6.png" alt="">
+                <h2>Bolso rosado</h2>
+                <i class='n'></i>
             </div>
-            <div class="box">
-                <img src="img/p6.png" alt="">
-                <h2>Loius Vouton 2-way</h2>
-                <span>$24.000</span>
-                <i class='bx bx-cart-add'></i>
+            <div class="box bolsos">
+                <img src="./img/productod/bolsos/7.png" alt="">
+                <h2>Bolso Gucci</h2>
+                <i class='n'></i>
+            </div>
+            <div class="box bolsos">
+                <img src="./img/productod/bolsos/8.png" alt="">
+                <h2>Bolso</h2>
+                <i class='n'></i>
+            </div>
+            <div class="box bolsos">
+                <img src="./img/productod/bolsos/9.png" alt="">
+                <h2>Bolso WE gris</h2>
+                <i class='n'></i>
+            </div>
+            <div class="box bolsos">
+                <img src="./img/productod/bolsos/10.png" alt="">
+                <h2>Bolso</h2>
+                <i class='n'></i>
+            </div>
+            <div class="box bolsos">
+                <img src="./img/productod/bolsos/11.png" alt="">
+                <h2>Bolso We</h2>
+                <i class='n'></i>
+            </div>
+            <div class="box bolsos">
+                <img src="./img/productod/bolsos/12.png" alt="">
+                <h2>Bolso rosa</h2>
+                <i class='n'></i>
+            </div>
+            <div class="box bolsos">
+                <img src="./img/productod/bolsos/13.png" alt="">
+                <h2>Bolso</h2>
+                <i class='n'></i>
+            </div>
+            <div class="box bolsos">
+                <img src="./img/productod/bolsos/14.png" alt="">
+                <h2>Bolso decorativo de perro</h2>
+                <i class='n'></i>
+            </div>
+            <div class="box bolsos">
+                <img src="./img/productod/bolsos/15.png" alt="">
+                <h2>Bolso decorativo de gato</h2>
+                <i class='n'></i>
+            </div>
+            <div class="box bolsos">
+                <img src="./img/productod/bolsos/16.png" alt="">
+                <h2>Bolso</h2>
+                <i class='n'></i>
+            </div>
+            <div class="box bolsos">
+                <img src="./img/productod/bolsos/17.png" alt="">
+                <h2>Bolso</h2>
+                <!-- <span>$24.000</span> -->
+                <i class='n'></i>
+            </div>
+            <div class="box bolsos">
+                <img src="./img/productod/bolsos/18.png" alt="">
+                <h2>Bolso Gucci</h2>
+                <i class='n'></i>
+            </div>
+             <!-- Cartera -->
+            <div class="box carteras">
+                <img src="./img/productod/carteras/1.png" alt="">
+                <h2>Carteras</h2>
+                <i class='n'></i>
+            </div>
+            <div class="box carteras">
+                <img src="./img/productod/carteras/2.png" alt="">
+                <h2>Cartera Masshat</h2>
+                <i class='n'></i>
+            </div>
+            <div class="box carteras">
+                <img src="./img/productod/carteras/3.png" alt="">
+                <h2>Cartera de felpa</h2>
+                <i class='n'></i>
+            </div>
+            <div class="box carteras">
+                <img src="./img/productod/carteras/4.png" alt="">
+                <h2>Cartera Masshat</h2>
+                <i class='n'></i>
+            </div>
+            <div class="box carteras">
+                <img src="./img/productod/carteras/5.png" alt="">
+                <h2>Cartera Gucci</h2>
+                <i class='n'></i>
+            </div>
+            <div class="box carteras">
+                <img src="./img/productod/carteras/6.png" alt="">
+                <h2>Cartera Masshat</h2>
+                <i class='n'></i>
+            </div>
+            <div class="box carteras">
+                <img src="./img/productod/carteras/7.png" alt="">
+                <h2>Cartera</h2>
+                <i class='n'></i>
+            </div>
+            <div class="box carteras">
+                <img src="./img/productod/carteras/8.png" alt="">
+                <h2>Cartera PINK</h2>
+                <i class='n'></i>
+            </div>
+            <!-- Equipaje -->
+            <div class="box equipaje">
+                <img src="./img/productod/equipaje/1.png" alt="">
+                <h2>Maleta de viaje</h2>
+                <i class='n'></i>
+            </div>
+            <div class="box equipaje">
+                <img src="./img/productod/equipaje/2.png" alt="">
+                <h2>Maleta de viaje</h2>
+                <i class='n'></i>
+            </div>
+            <div class="box equipaje">
+                <img src="./img/productod/equipaje/3.png" alt="">
+                <h2>Maleta de viaje CARINA</h2>
+                <i class='n'></i>
+            </div>
+            <div class="box equipaje">
+                <img src="./img/productod/equipaje/4.png" alt="">
+                <h2>Maleta de viaje AirBag</h2>
+                <i class='n'></i>
+            </div>
+            <div class="box equipaje">
+                <img src="./img/productod/equipaje/5.png" alt="">
+                <h2>Maleta de viaje</h2>
+                <i class='n'></i>
+            </div>
+            <div class="box equipaje">
+                <img src="./img/productod/equipaje/6.png" alt="">
+                <h2>Maleta de viaje</h2>
+                <i class='n'></i>
+            </div>
+            <div class="box equipaje">
+                <img src="./img/productod/equipaje/7.png" alt="">
+                <h2>Maleta de viaje Activo</h2>
+                <i class='n'></i>
+            </div>
+            <div class="box equipaje">
+                <img src="./img/productod/equipaje/8.png" alt="">
+                <h2>Maleta de viaje</h2>
+                <i class='n'></i>
+            </div>
+            <div class="box equipaje">
+                <img src="./img/productod/equipaje/9.png" alt="">
+                <h2>Maleta de viaje AirBag</h2>
+                <i class='n'></i>
+            </div>
+            <div class="box equipaje">
+                <img src="./img/productod/equipaje/10.png" alt="">
+                <h2>Maleta de viaje</h2>
+                <i class='n'></i>
+            </div>
+            <div class="box equipaje">
+                <img src="./img/productod/equipaje/11.png" alt="">
+                <h2>Maleta de viaje Mcalovin</h2>
+                <i class='n'></i>
+            </div>
+            <div class="box equipaje">
+                <img src="./img/productod/equipaje/12.png" alt="">
+                <h2>Maleta de viaje Vin Ferc</h2>
+                <i class='n'></i>
+            </div>
+            <div class="box equipaje">
+                <img src="./img/productod/equipaje/13.png" alt="">
+                <h2>Maleta de viaje</h2>
+                <i class='n'></i>
+            </div>
+            <!-- Morrales para niños -->
+            <div class="box bag_kids">
+                <img src="./img/productod/maletas-niños/1.png" alt="">
+                <h2>Maleta para niña</h2>
+                <i class='n'></i>
+            </div>
+            <div class="box bag_kids">
+                <img src="./img/productod/maletas-niños/2.png" alt="">
+                <h2>Maleta para niña Ghoulicious</h2>
+                <i class='n'></i>
+            </div>
+            <div class="box bag_kids">
+                <img src="./img/productod/maletas-niños/3.png" alt="">
+                <h2>Maleta para niños The Good Dinosaur</h2>
+                <i class='n'></i>
+            </div>
+            <div class="box bag_kids">
+                <img src="./img/productod/maletas-niños/4.png" alt="">
+                <h2>Maleta para niña Barbie</h2>
+                <i class='n'></i>
+            </div>
+            <div class="box bag_kids">
+                <img src="./img/productod/maletas-niños/5.png" alt="">
+                <h2>Maleta para niña Monster Girl</h2>
+                <i class='n'></i>
+            </div>
+            <div class="box bag_kids">
+                <img src="./img/productod/maletas-niños/6.png" alt="">
+                <h2>Cartuchera para niños</h2>
+                <i class='n'></i>
+            </div>
+            <div class="box bag_kids">
+                <img src="./img/productod/maletas-niños/7.png" alt="">
+                <h2>Maleta para niño Redline Racing</h2>
+                <i class='n'></i>
+            </div>
+            <div class="box bag_kids">
+                <img src="./img/productod/maletas-niños/8.png" alt="">
+                <h2>Maleta para niños olaf</h2>
+                <i class='n'></i>
+            </div>
+            <!-- Morrales -->
+            <div class="box morrales">
+                <img src="./img/productod/morales/1.png" alt="">
+                <h2>Morral Tote's</h2>
+                <i class='n'></i>
+            </div>
+            <div class="box morrales">
+                <img src="./img/productod/morales/2.png" alt="">
+                <h2>Morral DK Bags</h2>
+                <i class='n'></i>
+            </div>
+            <div class="box morrales">
+                <img src="./img/productod/morales/3.png" alt="">
+                <h2>Morral Totto</h2>
+                <i class='n'></i>
+            </div>
+            <div class="box morrales">
+                <img src="./img/productod/morales/4.png" alt="">
+                <h2>Morral</h2>
+                <i class='n'></i>
+            </div>
+            <div class="box morrales">
+                <img src="./img/productod/morales/5.png" alt="">
+                <h2>Morral Wilson</h2>
+                <i class='n'></i>
+            </div>
+            <div class="box morrales">
+                <img src="./img/productod/morales/6.png" alt="">
+                <h2>Morral Totto</h2>
+                <i class='n'></i>
+            </div>
+            <div class="box morrales">
+                <img src="./img/productod/morales/7.png" alt="">
+                <h2>Morral deportivo Adidas</h2>
+                <i class='n'></i>
+            </div>
+            <div class="box morrales">
+                <img src="./img/productod/morales/8.png" alt="">
+                <h2>Morral Totto</h2>
+                <i class='n'></i>
+            </div>
+            <div class="box morrales">
+                <img src="./img/productod/morales/9.png" alt="">
+                <h2>Morral Somel</h2>
+                <i class='n'></i>
+            </div>
+            <div class="box morrales">
+                <img src="./img/productod/morales/10.png" alt="">
+                <h2>Morral Totto</h2>
+                <i class='n'></i>
+            </div>
+            <div class="box morrales">
+                <img src="./img/productod/morales/12.png" alt="">
+                <h2>Morral Prince</h2>
+                <i class='n'></i>
+            </div>
+            <div class="box morrales">
+                <img src="./img/productod/morales/13.png" alt="">
+                <h2>Morral Totto</h2>
+                <i class='n'></i>
+            </div>
+            <div class="box morrales">
+                <img src="./img/productod/morales/14.png" alt="">
+                <h2>Morral Wilson</h2>
+                <i class='n'></i>
+            </div>
+            <div class="box morrales">
+                <img src="./img/productod/morales/15.png" alt="">
+                <h2>Morral</h2>
+                <i class='n'></i>
+            </div>
+            <div class="box morrales">
+                <img src="./img/productod/morales/16.png" alt="">
+                <h2>Morral BiaoWang</h2>
+                <i class='n'></i>
+            </div>
+            <div class="box morrales">
+                <img src="./img/productod/morales/17.png" alt="">
+                <h2>Morral Wilson</h2>
+                <i class='n'></i>
+            </div>
+            <div class="box morrales">
+                <img src="./img/productod/morales/18.png" alt="">
+                <h2>Morral Totto</h2>
+                <i class='n'></i>
+            </div>
+            <div class="box morrales">
+                <img src="./img/productod/morales/19.png" alt="">
+                <h2>Morral Wilson</h2>
+                <i class='n'></i>
+            </div>
+            <div class="box morrales">
+                <img src="./img/productod/morales/20.png" alt="">
+                <h2>Morral Wen Feng</h2>
+                <i class='n'></i>
+            </div>
+            <div class="box morrales">
+                <img src="./img/productod/morales/21.png" alt="">
+                <h2>Morral Ponasoo</h2>
+                <i class='n'></i>
             </div>
         </div>
     </section>
     <!-- Customers -->
-    <section class="customers" id="customers">
+    <!-- <section class="customers" id="customers">
         <div class="heading">
             <h2>Our Customer's</h2>
         </div>
@@ -124,7 +452,9 @@
             <div class="box">
                 <img src="./img/rev1.jpg" alt="">
                 <h2>Bee Jordan</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi impedit amet autem ipsum nobis, nulla facilis tenetur repellendus deserunt inventore sapiente, quis labore nesciunt mollitia dolorem quas necessitatibus soluta cupiditate.</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi impedit amet autem ipsum nobis, nulla
+                    facilis tenetur repellendus deserunt inventore sapiente, quis labore nesciunt mollitia dolorem quas
+                    necessitatibus soluta cupiditate.</p>
                 <div class="stars">
                     <i class='bx bxs-star'></i>
                     <i class='bx bxs-star'></i>
@@ -136,7 +466,9 @@
             <div class="box">
                 <img src="./img/rev2.jpg" alt="">
                 <h2>Adrian Sote</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi impedit amet autem ipsum nobis, nulla facilis tenetur repellendus deserunt inventore sapiente, quis labore nesciunt mollitia dolorem quas necessitatibus soluta cupiditate.</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi impedit amet autem ipsum nobis, nulla
+                    facilis tenetur repellendus deserunt inventore sapiente, quis labore nesciunt mollitia dolorem quas
+                    necessitatibus soluta cupiditate.</p>
                 <div class="stars">
                     <i class='bx bxs-star'></i>
                     <i class='bx bxs-star'></i>
@@ -148,7 +480,9 @@
             <div class="box">
                 <img src="./img/rev3.jpg" alt="">
                 <h2>Diego Molano</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi impedit amet autem ipsum nobis, nulla facilis tenetur repellendus deserunt inventore sapiente, quis labore nesciunt mollitia dolorem quas necessitatibus soluta cupiditate.</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi impedit amet autem ipsum nobis, nulla
+                    facilis tenetur repellendus deserunt inventore sapiente, quis labore nesciunt mollitia dolorem quas
+                    necessitatibus soluta cupiditate.</p>
                 <div class="stars">
                     <i class='bx bxs-star'></i>
                     <i class='bx bxs-star'></i>
@@ -158,53 +492,129 @@
                 </div>
             </div>
         </div>
-    </section>
-    <!-- Noticias -->
-    <section class="newsletter">
-        <h2>Subscribe For Special <br>Discounts</h2>
-        <form action="">
-            <input type="email" placeholder="Email" required>
-            <input type="submit" value="subscribe" class="email-btn">
-
-        </form>
-    </section>
-    <!-- Footer -->
-    <section class="footer">
-        <div class="footer-box">
-            <!-- Logo -->
-            <a href="#" class="logo"><i class="bx bxs-shopping-bag"></i>Bag</a>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam cupiditate id quisquam nemo molestiae eveniet iure facere sunt! Dolore eveniet mollitia possim</p>
-            <div class="social">
-                <a href="#"><i class='bx bxl-facebook-circle'></i></a>
-                <a href="#"><i class='bx bxl-instagram' ></i></a>
+    </section> -->
+    <!-- contact section starts  -->
+    <section class="contact" id="contact">
+        <div class="heading">
+            <h3 class="title">CONTÁCTANOS</h3>
+        </div>
+        <div class="col-8">
+            <div class="mapouter">
+               <div class="gmap_canvas" style="border-radius: 4rem;"><iframe id="gmap_canvas"
+                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.1861888992366!2d-74.02902138523753!3d4.737690496559065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f8fca6370b9a7%3A0x3b11916b5440d9be!2sbolsos%20y%20morrales%20benjcor!5e0!3m2!1ses!2sco!4v1661806652294!5m2!1ses!2sco"
+                     frameborder="0" scrolling="no" marginheight="0" width="100%" height="400px"
+                     marginwidth="0"></iframe>
+                  <style>
+                     .mapouter {
+                        position: relative;
+                        text-align: right;
+                        height: auto;
+                        width: 100%;
+                     }
+                  </style><a href="https://www.embedgooglemap.net"></a>
+                  <style>
+                     .gmap_canvas {
+                        overflow: hidden;
+                        background: none !important;
+                        height: auto;
+                        width: 100%;
+                     }
+                  </style>
+               </div>
             </div>
+         </div>
+        <div class="row inf-contact">
+           <div class="form">
+              <div class="icons-container">
+                 <div class="icons">
+                    <i class="fas fa-map"></i>
+                    <h3>Dirección:</h3>
+                    <p>Cra. 8 #161a-34, Bogotá</p>
+                    <a href="https://goo.gl/maps/MFZVYjnNyPGCg7jr8" target="_blank" class="btn btn-contact">Ver en
+                       Google Maps</a>
+                 </div>
+                 <div class="icons">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Email:</h3>
+                    <p>bencor37362201@gmail.com</p>
+                    <a href="mailto:bencor37362201@gmail.com?" target="_blank" class="btn btn-contact">Enviar correo</a>
+                 </div>
+                 <div class="icons">
+                    <i class="fas fa-phone"></i>
+                    <h3>Celular:</h3>
+                    <p>+57 313 304 3720</p>
+                    <a href="tel:+573133043720" target="_blank" class="btn btn-contact">Llamar</a>
+                 </div>
+                 <div class="icons">
+                    <i class="fas fa-clock"></i>
+                    <h3>Horarios:</h3>
+                    <p>Lun - Sáb:<b> 09:30 a.m - 8:30 p.m.</b></p>
+                    <p>Dom:<b> 10:00 a.m - 09:00 p.m.</b></p>
+                 </div>
+              </div>
+           </div>
         </div>
-        <div class="footer-box">
-            <h3>Support</h3>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Nosotros</a></li>
-            <li><a href="#">Productos</a></li>
-            <li><a href="#">Noticias</a></li>
+     </section>
+    <!-- footer section starts  -->
+    <section class="footer">
+
+        <div class="box-container container">
+
+           <div class="box">
+              <h3>Enlaces rápidos</h3>
+              <a href="#home"><i class="fas fa-angle-right"></i>Inicio</a>
+              <a href="#about"><i class="fas fa-angle-right"></i>Nosotros</a>
+              <a href="#services"><i class="fas fa-angle-right"></i>Servicios</a>
+              <a href="#producs"><i class="fas fa-angle-right"></i>Productos</a>
+              <a href="#contact"><i class="fas fa-angle-right"></i>Contácto</a>
+           </div>
+
+           <div class="box">
+              <h3>Contactanos</h3>
+              <a href="https://goo.gl/maps/MFZVYjnNyPGCg7jr8" target="_blank"> <i class="fas fa-map"></i> Cra. 8 #161a-34, Bogotá </a>
+              <a href="tel:+573133043720"> <i class="fas fa-phone"></i> Celular: +57 313 304 3720 </a>
+              <a href="mailto:bencor37362201@gmail.com?"> <i class="fas fa-envelope"></i>bencor37362201@gmail.com</a>
+           </div>
+
+           <div class="box">
+              <h3>Síguenos</h3>
+              <a href="https://www.facebook.com/Benjcorbolsosymorrales" target="_blank"> <i class="fab fa-facebook-f"></i>
+                 Facebook </a>
+              <a href="https://www.instagram.com/benjcorbolsosymorrales/" target="_blank"> <i class="fab fa-instagram"></i>
+                 Instagram </a>
+           </div>
         </div>
-        <div class="footer-box">
-            <h3>Acceso rapido</h3>
-            <li><a href="#">Payments</a></li>
-            <li><a href="#">Our Blogs</a></li>
-            <li><a href="#">Our Partners</a></li>
-            <li><a href="#">Terms of use</a></li>
+
+        <p class="credit"> &#169; 2022 <a href="https://www.digitalfutureagency.com" target="a_blank">Digital Future Agency</a> &nbsp Todos los derechos reservados. </p>
+
+     </section>
+     
+    <!-- WHATSAPP -->
+    <div class="nav-bottom">
+        <div class="popup-whatsapp fadeIn">
+           <div class="content-whatsapp -top"><button type="button" class="closePopup">
+                 <i class="material-icons icon-font-color">close</i>
+              </button>
+              <h3>Hola 🤩, ¡Puedes pedir tu producto por nuestro canal de Whatsapp!🧳.</h3>
+           </div>
+           <div class="content-whatsapp -bottom">
+              <input class="whats-input" id="whats-in" type="text" Placeholder="Enviar mensaje..." />
+              <button class="send-msPopup" id="send-btn" type="button">
+                 <i class="material-icons icon-font-color--black">send</i>
+              </button>
+           </div>
         </div>
-        <div class="footer-box contact">
-            <h3>Contact</h3>
-            <span><i class='bx bx-map'></i>250 new york City, Usa 101</span>
-            <span><i class='bx bxs-phone'></i>+1 444 516 8151</span>
-            <span><i class='bx bxs-envelope'></i>hola@gmail.com</span>
-        </div>
-    </section>
-    <!-- Coryright -->
-    <div class="copyright">
-        <p>&#169; Creador por Digital Future Agency</p>
-    </div>
+        <button type="button" id="whats-openPopup" class="whatsapp-button">
+           <img class="icon-whatsapp" src="https://cdn-icons-png.flaticon.com/512/134/134937.png">
+        </button>
+        <div class="circle-anime"></div>
+     </div>
+     <!-- CLOSE WHATSAPP -->
+     
     <!-- Link to JS -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="https://huynhhuynh.github.io/owlcarousel2-filter/dist/owlcarousel2-filter.min.js"></script>
     <script src="js/script.js"></script>
     <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
 </body>
