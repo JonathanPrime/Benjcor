@@ -131,7 +131,7 @@ header .navbar a:hover {
 }
 
 #menu-bar {
-    font-size: 2rem;
+    font-size: 1.2rem;
     cursor: pointer;
     color: var(--palet-2);
     border: .1rem solid var(--palet-2);
@@ -271,6 +271,7 @@ header .navbar a:hover {
     padding: 1rem 0;
     line-height: 0;
     font-size: 3.5rem;
+    font-weight: normal;
     color: var(--palet-4);
     font-family: 'AristaSignature';
 }
@@ -537,8 +538,8 @@ header .navbar a:hover {
 .footer .box-container {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (minmax(25rem, 1fr))[auto-fit];
-    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    -ms-grid-columns: (minmax(19rem, 1fr))[auto-fit];
+    grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
     gap: 2rem;
 }
 
@@ -549,7 +550,7 @@ header .navbar a:hover {
 }
 
 .footer .box-container .box a {
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     line-height: 2;
     color: var(--white);
     padding: .5rem 0;
@@ -581,7 +582,7 @@ header .navbar a:hover {
 
 .footer .credit {
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-family: 'MontserratBold';
     color: var(--white);
     padding: 0 1rem;
@@ -593,7 +594,7 @@ header .navbar a:hover {
 .footer .credit a {
     color: var(--palet-4);
     font-family: 'MontserratBold';
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 
